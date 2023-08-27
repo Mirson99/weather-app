@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj": {}
+    "C:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj": {}
   },
   "projects": {
-    "c:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj": {
+    "C:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj",
+        "projectUniqueName": "C:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj",
         "projectName": "WeatherApp",
-        "projectPath": "c:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj",
+        "projectPath": "C:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\WeatherApp.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\obj\\",
+        "outputPath": "C:\\praca-zadanko\\weather-app\\weather-app-backend\\WeatherApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

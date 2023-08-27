@@ -13,7 +13,7 @@ public class WeatherController : ControllerBase
         _weatherService = weatherService;
     }
 
-    [HttpGet("weather")]
+    [HttpGet()]
     public async Task<IActionResult> GetWeatherData(double latitude, double longitude)
     {
         try

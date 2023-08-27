@@ -1,0 +1,48 @@
+.daily-weather-list {
+  margin-top: 32px;
+  width: 44%;
+}
+
+.daily-weather-list__headers {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  border: 1px solid grey;
+  border-bottom: none;
+}
+
+.daily-weather-list__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+.daily-weather-list__row--dark {
+    background-color: #dbdbdb;
+}
+
+.daily-weather-list__header {
+  width: 50%;
+}
+
+.daily-weather-list__column {
+  width: 50%;
+}
+
+.daily-weather-list__header-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.daily-weather-list__content {
+  border: 1px solid grey;
+  border-top: none;
+}
+
+.daily-weather-list__csv-link {
+    color: blue;
+}
+
+.daily-weather-list__csv-link-wrapper {
+    margin-top: 12px;
+}

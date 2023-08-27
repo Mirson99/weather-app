@@ -39,7 +39,7 @@ public class WeatherService : IWeatherService
 
       dailyAverages.Add(new DailyWeatherData
       {
-        Date = date,
+        Date = date.ToString("dd/MM/yyyy"),
         AverageTemperature = averageTemperature
       });
     }
