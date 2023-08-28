@@ -49,6 +49,7 @@ export default function CoordinatesForm({
               type="number"
               className="coordinates-form__input"
               placeholder="Latitude"
+              step="0.01"
               {...register("latitude", { required: true })}
             />
             {errors.latitude && (
@@ -63,6 +64,7 @@ export default function CoordinatesForm({
               type="number"
               className="coordinates-form__input"
               placeholder="Longitude"
+              step="0.01"
               {...register("longitude", { required: true })}
             />
             {errors.longitude && (

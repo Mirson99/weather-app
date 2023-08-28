@@ -15,6 +15,7 @@ export default function Homepage() {
     <div className="homepage">
       <div className="homepage__header">
         <h1>Weather App</h1>
+        <p>Type latitude and longitude of location to get weather forecast.</p>
       </div>
       <CoordinatesForm
         returnWeatherData={(weatherDataList, longitude, latitude) => {

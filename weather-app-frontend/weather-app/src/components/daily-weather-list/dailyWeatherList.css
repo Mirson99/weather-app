@@ -1,6 +1,10 @@
 .daily-weather-list {
   margin-top: 32px;
-  width: 44%;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 48%;  
+  }
 }
 
 .daily-weather-list__headers {
@@ -39,10 +43,8 @@
   border-top: none;
 }
 
-.daily-weather-list__csv-link {
-    color: blue;
-}
-
 .daily-weather-list__csv-link-wrapper {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 12px;
 }

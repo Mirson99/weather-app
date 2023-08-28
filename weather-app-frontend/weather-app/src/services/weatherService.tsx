@@ -1,6 +1,5 @@
 import axios, { AxiosError } from "axios";
 import { CoordinatesFormData } from "../types/CoordinatesFormData";
-import { createImportSpecifier } from "typescript";
 
 export const getWeatherData = async (
   coordinatesFormData: CoordinatesFormData

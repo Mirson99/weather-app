@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+using System.Globalization;
 namespace WeatherApp.Controllers;
 
 [ApiController]
@@ -14,11 +14,15 @@ public class WeatherController : ControllerBase
     }
 
     [HttpGet()]
-    public async Task<IActionResult> GetWeatherData(double latitude, double longitude)
+    public async Task<IActionResult> GetWeatherData(float latitude, float longitude)
     {
         try
         {
-            var weatherData = await _weatherService.GetWeatherDataAsync(latitude, longitude);
+            CultureInfo cultureInfo = new CultureInfo("en-US");
+            string sendLatitude = latitude.ToString("0.00", cultureInfo);
+            string sendLongitude = longitude.ToString("0.00", cultureInfo);
+            
+            var weatherData = await _weatherService.GetWeatherDataAsync(sendLatitude, sendLongitude);
             var dailyAverages = _weatherService.CalculateDailyAverages(weatherData);
 
             return Ok(dailyAverages);

@@ -46,10 +46,9 @@ public class WeatherService : IWeatherService
 
     return dailyAverages;
   }
-
-  public async Task<WeatherApiResponse> GetWeatherDataAsync(double latitude, double longitude)
+  public async Task<WeatherApiResponse> GetWeatherDataAsync(string latitude, string longitude)
   {
-    string apiUrl = $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=temperature_2m";
+    string apiUrl = $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={latitude}&hourly=temperature_2m";
     string responseBody = "";
 
     var options = new JsonSerializerOptions

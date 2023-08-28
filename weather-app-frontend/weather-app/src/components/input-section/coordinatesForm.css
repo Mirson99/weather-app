@@ -1,7 +1,3 @@
-/* .coordinates-form-wrapper {
-  
-} */
-
 .coordinates-form {
     display: flex;
     flex-direction: column;
@@ -10,7 +6,13 @@
 
 .coordinates-form__input-section {
   display: flex;
-  gap: 48px;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 48px;
+  }
 }
 
 .coordinates-form__input-box {
@@ -21,6 +23,7 @@
 
 .coordinates-form__input {
   padding: 8px 4px;
+  width: 240px;
 }
 
 .coordinates-form__input[type="text"] {

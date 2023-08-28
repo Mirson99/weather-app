@@ -24,12 +24,11 @@ export default function DailyWeatherList({
     >
       <div className="daily-weather-list__column">{d.date}</div>
       <div className="daily-weather-list__column">
-        {d.averageTemperature} &deg;
+        {d.averageTemperature} &deg;C
       </div>
     </div>
   ));
 
-  // Generowanie linku do pobrania pliku CSV
   const csvFileName = "daily_weather_data.csv";
   const csvHeaders = [
     { label: "Date", key: "date" },
